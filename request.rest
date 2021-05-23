@@ -1,0 +1,85 @@
+POST http://localhost:3000/api/register-delivery-person
+Content-Type: application/json
+
+{
+    "name": "sourav",
+    "phone_number": 8989808907,
+    "password":"sourv1234"
+}
+
+###
+POST http://localhost:3000/api/login-user
+Content-Type: application/json
+
+{
+    "phone_number": 8989808909,
+    "password":"sourv1234"
+}
+
+###
+GET http://localhost:3000/api/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjBhYTFiOWQ3NTQxZDQzZWNjOTFiNjM4Iiwicm9sZSI6ImN1c3RvbWVyIiwibmFtZSI6InNvdXJhdiIsImlhdCI6MTYyMTc4MTAyMSwiZXhwIjoxNjIyMzg1ODIxfQ.vaD7xG7a2YK9-L9v5GLRb1FJRKezuVpJMq7_dPgat3U
+###
+
+PATCH http://localhost:3000/api/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjBhYTFiOWQ3NTQxZDQzZWNjOTFiNjM4Iiwicm9sZSI6ImN1c3RvbWVyIiwibmFtZSI6InNvdXJhdiIsImlhdCI6MTYyMTc4MTAyMSwiZXhwIjoxNjIyMzg1ODIxfQ.vaD7xG7a2YK9-L9v5GLRb1FJRKezuVpJMq7_dPgat3U
+Content-Type: application/json
+
+{
+    "items": {
+        "item_id": "60aa42b0ec68cf36b4ffe86a",
+        "quantity": "2"
+    }
+}
+
+###
+POST  http://localhost:3000/api/order
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjBhYTFiOWQ3NTQxZDQzZWNjOTFiNjM4Iiwicm9sZSI6ImN1c3RvbWVyIiwibmFtZSI6InNvdXJhdiIsImlhdCI6MTYyMTc4MTAyMSwiZXhwIjoxNjIyMzg1ODIxfQ.vaD7xG7a2YK9-L9v5GLRb1FJRKezuVpJMq7_dPgat3U
+
+
+###
+POST http://localhost:3000/api/login-admin
+Content-Type: application/json
+
+{
+    "phone_number": 8989808908,
+    "password":"sourv1234"
+}
+
+###
+GET http://localhost:3000/api/allorders
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjBhYTFiZGU3NTQxZDQzZWNjOTFiNjM5Iiwicm9sZSI6ImFkbWluIiwibmFtZSI6InNvdXJhdiIsImlhdCI6MTYyMTc4MTkxMCwiZXhwIjoxNjIyMzg2NzEwfQ.40uASrnDztNc2s29BQz69wfkdp9vy_vrI57H8QrjCMQ
+
+###
+GET http://localhost:3000/api/deliveryperson
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjBhYTFiZGU3NTQxZDQzZWNjOTFiNjM5Iiwicm9sZSI6ImFkbWluIiwibmFtZSI6InNvdXJhdiIsImlhdCI6MTYyMTc4MTkxMCwiZXhwIjoxNjIyMzg2NzEwfQ.40uASrnDztNc2s29BQz69wfkdp9vy_vrI57H8QrjCMQ
+
+###
+PATCH http://localhost:3000/api/order/update
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjBhYTFiZGU3NTQxZDQzZWNjOTFiNjM5Iiwicm9sZSI6ImFkbWluIiwibmFtZSI6InNvdXJhdiIsImlhdCI6MTYyMTc4MTkxMCwiZXhwIjoxNjIyMzg2NzEwfQ.40uASrnDztNc2s29BQz69wfkdp9vy_vrI57H8QrjCMQ
+Content-Type: application/json
+
+{
+    "id": "60aa1c287541d43ecc91b63c",
+    "order_id": "60aa73db06ae2f05ec5ddda9"
+}
+
+###
+POST http://localhost:3000/api//login-delivery-person
+Content-Type: application/json
+
+{
+    "phone_number": 8989808907,
+    "password":"sourv1234"
+}
+
+###
+PATCH http://localhost:3000/api/delivery/order/update
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjBhYTFjMjg3NTQxZDQzZWNjOTFiNjNjIiwicm9sZSI6ImRlbGl2ZXlfcGVyc29uIiwibmFtZSI6InNvdXJhdiIsImlhdCI6MTYyMTc4MzcwNiwiZXhwIjoxNjIyMzg4NTA2fQ.69EwFYlOpD6Y-b1xGBgKSV76M3iLl4xBxzlT2SNI3fE
+Content-Type: application/json
+
+{
+    "status": "ITEMS PICKED"
+}
+
+
